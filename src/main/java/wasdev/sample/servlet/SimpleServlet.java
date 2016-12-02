@@ -45,7 +45,7 @@ public class SimpleServlet extends HttpServlet {
 			response.getWriter().print("After Dogs table!</br>");
 			stmt.execute("DELETE FROM DOGS WHERE ID = 7");
 			response.getWriter().print("After delete row 7!</br>");
-		    	stmt.execute("INSERT INTO DOGS VALUES (7, 'NEW1', 6, 'NEW1', 100.00 )");
+		    	stmt.execute("INSERT INTO DOGS VALUES (7, 'NEW', 6, 'NEW', 100.00 )");
 			response.getWriter().print("After insert NEW1!</br>");
             		stmt.executeQuery("SELECT * FROM DOGS");
 			response.getWriter().print("After Select statement!</br>");

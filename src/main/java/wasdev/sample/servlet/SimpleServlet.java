@@ -35,7 +35,7 @@ public class SimpleServlet extends HttpServlet {
                Context initContext;
 		try {
 			initContext = new InitialContext();
-			DataSource ds = (DataSource)initContext.lookup("jdbc/pet-finder-dashDB for Analytics-4o");
+			DataSource ds = (DataSource)initContext.lookup("jdbc/dashDB_tx_1");
 			Connection conn = ds.getConnection();
 		    	//System.out.println("yes");
 			response.getWriter().print("DashDB is connected now!</br>");
